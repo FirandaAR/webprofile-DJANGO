@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Firanda Profile - Biodata{% endblock %}
+
+{% block content %}
+<section class="font"><div class="box">
+      <h4 class="section-title">Biodata Singkat</h4>
+      <img 
+      class="avatar"
+      alt="Gambar saya"
+      src="{% static 'images/jawa.jpg' %}">
+    <p>
+      Asslamualaykum, hai! gw <br> <b>Firanda Abdur Rozzaq</b> <br>
+    </p>
+    <!-- Bold <b> -->
+    <!-- italic <i> -->
+    <p>
+      Saya adalah santri di SMA IT HSI Purworejo,Saat ini saya duduk di kelas 1 SMA,<br> Jujur ini merupakan pertama kali nya bagi saya belajar tentang komputer,<br>
+      Saya terakhir memegang komputer yaitu saat kelas 3 SD dan itu saya juga telah lupa bagaimana rasa nya😁,Dan saat ini saya sedang belajar tentang HTML dan cara membuat website sederhana.
+    </p>
+    </div>
+    <div class="box">
+      <h3 class="section-title">Hobi</h3>
+      <ul>
+        <li>Memasak</li>
+        <li>Main bola</li>
+        <li>Menulis</li>
+        <li>Membaca</li>
+        <li>Berenang</li>
+        <li>Memancing</li>
+        <li>Workout</li>
+        <li>Fotografi</li>
+    </ul>
+    </div>
+    <div class="box">
+      <h3 class="section-title">Cita Cita</h3>
+    <ol>
+      <li>Pebisnis yang Jujur</li>
+      <li>Programmer Ta'at</li>
+      <li>Pengusaha BTC yang Saleh</li>
+      <li>Jago di salah satu cabang olahraga</li>
+    </ol>
+    </div>
+    <div class="box">
+      <h3 class="section-title">Kontak</h3>
+      <p>Nomor telepon : 082221043497 <br>
+      Telegram : @Firrrz <br>
+      Instagram : <a
+      href="https://www.instagram.com/firnotbad_/"
+      >firnotbad_</a>
+    </p>
+     <a class="back-link" href="home.html">Home</a>
+    </div></section>
+
+{% endblock %}

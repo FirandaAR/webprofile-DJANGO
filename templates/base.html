@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Firanda Profile{% endblock %}</title>
+    <!-- Link ke file CSS static -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body class="font">
+    <img class="logo" src="{% static 'images/logo.webp' %}" alt="Logo HSI">
+    <h1 class="judul">{% block page_title %}HSI Boarding School Purworejo{% endblock %}</h1>
+    <h5 class="keterangan">{% block subtitle %}Website Biodata SMA IT Kelas IX{% endblock %}</h5>
+    
+    <hr class="hr" />
+
+    <div class="navbar">
+        <a href="{% url 'home' %}" class="nav-link">Beranda</a>
+        <a href="{% url 'santri_home' %}" class="nav-link">Home Santri</a>
+        <a href="{% url 'biodata' %}" class="nav-link">Biodata</a>
+        <a href="{% url 'jadwal' %}" class="nav-link">Jadwal</a>
+        <a href="{% url 'galeri' %}" class="nav-link">Galeri</a>
+        <a href="{% url 'feedback' %}" class="nav-link">Feedback</a>
+    </div>
+
+    <!-- Tempat konten halaman anak -->
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
